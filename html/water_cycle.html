@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Empty Example</title>
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<script type="text/javascript" src="../scripts/p5.min.js" async></script>
+	<script type="text/javascript" src="../scripts/jquery-2.2.2.min.js" async></script>
+	<script type="text/javascript" src="../scripts/jquery-ui.min.js" async></script>
+</head>
+<body>
+
+	<header></header>
+
+	<div class="bg-img"><img src="../img/paper_back.jpg" alt="paper_background"></div>
+	
+	<a href="../index.html">
+	<div id="logoArea" class="logo-area">
+		<div id="logo-border-rotate" class="logo-border-rotate">
+			<div id="logo-border-rotate-dot" class="logo-border-rotate-dot"></div>
+		</div>
+		<div id="logo-border" class="logo-border">
+			<div id="logo-border-dot" class="logo-border-dot"></div>
+		</div>
+		<div id="logo-text-container" class="logo-text-container"><h1 id="logo-text" class="logo-text">Yw.</h1></div>
+	</div>
+	</a>
+
+	<div id="main-menu" class="main-menu-container">
+		<ul>
+			<li>Home</li>
+			<li>Project</li>
+			<li>About</li>
+			<li>Contact</li>
+		</ul>
+	</div>
+	<!--p5 line background-->
+	<script type="text/javascript">		
+		var points = [];
+		var x, y;
+		var lines_length = 6;
+		var x_spacing = y_spacing = lines_length * 2 - 1;
+
+		function setup(){
+			createCanvas(windowWidth, windowHeight);
+			colorMode(RGB, 100); 
+
+			for(x = 0; x < width / x_spacing; x++){
+				for(y = 0; y < height / y_spacing; y++){
+					points.push(createVector(x * x_spacing, y * y_spacing));
+				}
+			}
+		}
+
+		function draw(){
+			background(100);
+			points.forEach(function(point){
+				drawVectorFromPoint(point);
+			})
+		}
+
+		function drawVectorFromPoint(anchorLocation){
+			var mouse = createVector(mouseX, mouseY);
+			var lineVector = p5.Vector.sub(mouse, anchorLocation); //sub = subtract. (a, b)=> a-b
+			lineVector.setMag(lines_length);
+			var hue = map(mouseX, 0, width, 40, 100);
+			// var vectorStroke = map(mouseY, 0, height, 1, 6);
+			strokeWeight(0.5);
+			stroke(hue, 50, 200, 60);
+			line(anchorLocation.x, 
+				 anchorLocation.y,
+				 anchorLocation.x + lineVector.x, 
+				 anchorLocation.y + lineVector.y);
+		}</script>
+	<script type="text/javascript" src="../scripts/main_script.js" async></script>
+	<script type="text/javascript" src="../scripts/jquery_drag.js" async></script>
+
+</body>
+</html>

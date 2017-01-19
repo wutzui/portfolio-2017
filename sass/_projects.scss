@@ -1,0 +1,273 @@
+// =================================================================================
+// main title at top right, with catelog.
+// =================================================================================
+.project-title {
+	margin-bottom: 3 * $leading;
+	ul{
+		margin-top: 50px;
+		li{
+			cursor: pointer;
+			font-family: 'Open Sans', sans-serif;
+			font-size: 16px;
+			line-height: 35px;
+		}
+	}
+}
+
+.projects-div-img {
+	position: relative;
+	width: 280px;
+	height: 280px;
+	background-color: pink; 
+	margin-bottom: 30px;
+	margin-right: 30px;
+	img {
+		width: 100%;
+	}
+}
+
+.p-inline {
+	display: inline-block;
+}
+
+.img-center {
+	position: absolute;
+	z-index: 3;
+	top: 0;
+	left: 0;
+	width: 200px;
+	height: 200px;
+	margin: 0;
+	padding: 40px;
+	background-color: rgba(10, 10, 10, 0.7);
+	color: white;
+	text-align: center;
+	transition: 0.25s ease-in;
+	opacity: 0;
+
+	h5 {
+		margin-top: 25%;
+		font-size: 20px;
+		font-weight: 600;
+		letter-spacing: 2px;
+	}
+	hr {
+		border: 0;
+    	height: 1px;
+    	width: 10%;
+    	background-color: white;
+	}
+	p {
+		font-size: 13px;
+		line-height: 16px;
+		letter-spacing: 0.5px;
+	}
+}
+
+.img-center:hover {
+	opacity: 1;
+	transition: 0.25s ease-in;
+}
+
+
+// =================================================================================
+// media + Society | styles
+// =================================================================================
+.media-container {
+	margin-top: 800px;
+	margin-left: 3 * ($grid-width + $grid-gutter);
+	width: 80%;
+}
+
+.media-title {
+	margin-bottom: 50px;
+	p {
+		width: 90%;
+	}
+}
+
+// =================================================================================
+// open space + experiments | styles
+// =================================================================================
+.open-container {
+	margin-top: 100px;
+	margin-left: 3 * ($grid-width + $grid-gutter);
+	width: 80%;
+}
+
+.open-title {
+	margin-bottom: 50px;
+	p {
+		width: 90%;
+	}
+}
+
+// =================================================================================
+// open space + experiments | styles
+// =================================================================================
+.data-container {
+	margin-top: 100px;
+	margin-left: 3 * ($grid-width + $grid-gutter);
+	width: 80%;
+}
+
+.data-title {
+	margin-bottom: 50px;
+	p {
+		width: 90%;
+	}
+}
+
+// =================================================================================
+// visual + formation | styles
+// =================================================================================
+.visual-container {
+	margin-top: 100px;
+	margin-left: 3 * ($grid-width + $grid-gutter);
+	width: 80%;
+}
+
+.visual-title {
+	margin-bottom: 50px;
+	p {
+		width: 90%;
+	}
+}
+
+// =================================================================================
+// projects copy rights
+// =================================================================================
+.projects-copy-right {
+   position: relative;
+   font-size: 12px;
+   letter-spacing: 1.2px;
+   top: 100px;
+   width: 100%;
+   text-align: center;
+   padding-bottom: 40px;
+}
+
+
+// =================================================================================
+// project pages standard styles.
+// =================================================================================
+
+//title container...
+.title-container {
+	position: absolute;
+	z-index: 31;
+	top: 160px;
+}
+
+.mockup-img{
+	position: absolute;
+	z-index: 30;
+	top: 160px;
+	img {
+		width: 700px;
+	}
+}
+
+/**********************************************************************************/
+.p-caption {
+	font-size: 13px;
+	margin-bottom: 10px;
+}
+
+.p-title {
+	font-family: 'Domine', serif;
+	font-size: 40px;
+}
+
+.p-description {
+	width: 200px;
+}
+
+/**********************************************************************************/
+.font-color-b {
+	color: black;
+}
+
+.font-color-w {
+	color: white;
+}
+
+/**********************************************************************************/
+.grey-back {
+	width: 100%;
+	background-color: black;
+	opacity: 0.5;
+}
+
+/**********************************************************************************/
+//default-h2-size 
+.h2-font-size {
+	font-size: 30px;
+    font-family: 'Domine', serif;
+    margin-bottom: 50px;
+}
+
+// default-p-size
+.p-font-size {
+	font-size: 13px;
+	line-height: 20px;
+}
+
+.p-font-size-14 {
+	font-size: 14px;
+	line-height: 21px;
+}
+
+/**********************************************************************************/
+//thick font
+.font-weight-600 {
+	font-weight: 600;
+}
+
+/**********************************************************************************/
+// link style
+.link-black {
+	margin-top: 30px;
+	padding: 8px;
+	border: solid 1px black;
+	background-color: transparent;
+	transition: 0.5s ease-in;
+	color: black;
+	p {
+		font-size: 11px;
+		text-align: center;
+		letter-spacing: 1.5px;
+	}
+}
+.link-black:hover {
+	background-color: black;
+	transition: 0.5s ease-in;
+	color: white;
+}
+
+.link-white {
+	margin-top: 30px;
+	padding: 8px;
+	border: solid 1px white;
+	background-color: transparent;
+	transition: 0.5s ease-in;
+	color: white;
+	p {
+		font-size: 11px;
+		text-align: center;
+		letter-spacing: 1.5px;
+	}
+}
+.link-white:hover {
+	background-color: white;
+	transition: 0.5s ease-in;
+	color: black;
+}
+
+/**********************************************************************************/
+.year-info-container {
+	margin-top: 20px;
+	span {
+		padding-right: 5px;
+	}
+}

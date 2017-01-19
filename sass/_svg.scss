@@ -1,0 +1,341 @@
+// =================================================================================
+// svg = draw animation define here.
+// =================================================================================
+@keyframes draw_polyline {
+  0% { stroke-dasharray: 0 300; stroke-dashoffset: 0; }
+  100% { stroke-dasharray: 300 300; stroke-dashoffset: 0; }
+}
+@-webkit-keyframes draw_polyline {
+  0% { stroke-dasharray: 0 300; stroke-dashoffset: 0; }
+  100% { stroke-dasharray: 300 300; stroke-dashoffset: 0; }
+}
+@-ms-keyframes draw_polyline {
+  0% { stroke-dasharray: 0 300; stroke-dashoffset: 0; }
+  100% { stroke-dasharray: 300 300; stroke-dashoffset: 0; }
+}
+@-moz-keyframes draw_polyline {
+  0% { stroke-dasharray: 0 300; stroke-dashoffset: 0; }
+  100% { stroke-dasharray: 300 300; stroke-dashoffset: 0; }
+}
+
+@keyframes draw_path {
+  0% { stroke-dasharray: 0 30; stroke-dashoffset: 0; }
+  100% { stroke-dasharray: 30; stroke-dashoffset: 0; }
+}
+@-webkit-keyframes draw_path {
+  0% { stroke-dasharray: 0 30; stroke-dashoffset: 0; }
+  100% { stroke-dasharray: 30; stroke-dashoffset: 0; }
+}
+@-ms-keyframes draw_path {
+  0% { stroke-dasharray: 0 30; stroke-dashoffset: 0; }
+  100% { stroke-dasharray: 30; stroke-dashoffset: 0; }
+}
+@-moz-keyframes draw_path {
+  0% { stroke-dasharray: 0 30; stroke-dashoffset: 0; }
+  100% { stroke-dasharray: 30; stroke-dashoffset: 0; }
+}
+
+// =================================================================================
+// svg = Project Link to: calc4living.nyc
+// =================================================================================
+#calc-nyc-svg {
+	transform: translate(190px, -380px);
+}
+
+.polyline_1 {
+	stroke-width: 1;
+	fill: transparent; 
+	stroke-dasharray: 0 300;
+  stroke-dashoffset: 0;
+}
+
+.path_1 {
+	stroke-width: 5;
+	fill: transparent; 	
+	stroke-dasharray: 0 30;
+  stroke-dashoffset: 0;
+}
+
+.calc-nyc-pic:hover .polyline_1 {
+  -webkit-animation: 1s draw_polyline ease-in forwards;
+  -moz-animation: 1s draw_polyline ease-in forwards;
+  -ms-animation: 1s draw_polyline ease-in forwards;
+  animation: 1s draw_polyline ease-in forwards;
+}
+
+.calc-nyc-pic:hover .path_1 {
+  -webkit-animation: 0.5s 0.7s draw_path ease-in forwards;
+  -moz-animation: 0.5s 0.7s draw_path ease-in forwards;
+  -ms-animation: 0.5s 0.7s draw_path ease-in forwards;
+  animation: 0.5s 0.7s draw_path ease-in forwards;
+}
+
+// =================================================================================
+// svg = Project Link to: shadow elections
+// =================================================================================
+#shadow-elections-svg {
+  transform: translate(-15px, -300px);
+}
+
+.polyline_2 {
+  stroke-width: 1;
+  fill: transparent; 
+  stroke-dasharray: 0 300;
+  stroke-dashoffset: 0;
+}
+
+.path_2 {
+  stroke-width: 5;
+  fill: transparent;  
+  stroke-dasharray: 0 30;
+  stroke-dashoffset: 0;
+}
+
+.shadow-elections-pic:hover .polyline_2 {
+  -webkit-animation: 1.25s draw_polyline ease-in forwards;
+  -moz-animation: 1.25s draw_polyline ease-in forwards;
+  -ms-animation: 1.25s draw_polyline ease-in forwards;
+  animation: 1.25s draw_polyline ease-in forwards;
+}
+
+.shadow-elections-pic:hover .path_2 {
+  -webkit-animation: 0.5s 1s draw_path ease-in forwards;
+  -moz-animation: 0.5s 1s draw_path ease-in forwards;
+  -ms-animation: 0.5s 1s draw_path ease-in forwards;
+  animation: 0.5s 1s draw_path ease-in forwards;
+}
+
+// =================================================================================
+// svg = Project Link to: water cycle
+// =================================================================================
+#water-cycle-svg {
+  transform: translate(190px, -270px);
+}
+
+.polyline_3 {
+  stroke-width: 1;
+  fill: transparent; 
+  stroke-dasharray: 0 300;
+  stroke-dashoffset: 0;
+}
+
+.path_3 {
+  stroke-width: 5;
+  fill: transparent;  
+  stroke-dasharray: 0 30;
+  stroke-dashoffset: 0;
+}
+
+.water-cycle-pic:hover .polyline_3 {
+  -webkit-animation: 0.9s draw_polyline ease-in forwards;
+  -moz-animation: 0.9s draw_polyline ease-in forwards;
+  -ms-animation: 0.9s draw_polyline ease-in forwards;
+  animation: 0.9s draw_polyline ease-in forwards;
+}
+
+.water-cycle-pic:hover .path_3 {
+  -webkit-animation: 0.5s 0.7s draw_path ease-in forwards;
+  -moz-animation: 0.5s 0.7s draw_path ease-in forwards;
+  -ms-animation: 0.5s 0.7s draw_path ease-in forwards;
+  animation: 0.5s 0.7s draw_path ease-in forwards;
+}
+
+// =================================================================================
+// svg = Project Link to: tactly
+// =================================================================================
+#tactly-svg {
+  transform: translate(175px, -113px);
+}
+
+.polyline_4 {
+  stroke-width: 1;
+  fill: transparent; 
+  stroke-dasharray: 0 300;
+  stroke-dashoffset: 0;
+}
+
+.path_4 {
+  stroke-width: 5;
+  fill: transparent;  
+  stroke-dasharray: 0 30;
+  stroke-dashoffset: 0;
+}
+
+.tactly-pic:hover .polyline_4 {
+  -webkit-animation: 0.9s draw_polyline ease-in forwards;
+  -moz-animation: 0.9s draw_polyline ease-in forwards;
+  -ms-animation: 0.9s draw_polyline ease-in forwards;
+  animation: 0.9s draw_polyline ease-in forwards;
+}
+
+.tactly-pic:hover .path_4 {
+  -webkit-animation: 0.5s 0.7s draw_path ease-in forwards;
+  -moz-animation: 0.5s 0.7s draw_path ease-in forwards;
+  -ms-animation: 0.5s 0.7s draw_path ease-in forwards;
+  animation: 0.5s 0.7s draw_path ease-in forwards;
+}
+
+// =================================================================================
+// svg = Project Link to: food safety
+// =================================================================================
+#food-safety-svg {
+  transform: translate(-150px, -220px);
+}
+
+.polyline_5 {
+  stroke-width: 1;
+  fill: transparent; 
+  stroke-dasharray: 0 300;
+  stroke-dashoffset: 0;
+}
+
+.path_5 {
+  stroke-width: 5;
+  fill: transparent;  
+  stroke-dasharray: 0 30;
+  stroke-dashoffset: 0;
+}
+
+.food-safety-pic:hover .polyline_5 {
+  -webkit-animation: 0.9s draw_polyline ease-in forwards;
+  -moz-animation: 0.9s draw_polyline ease-in forwards;
+  -ms-animation: 0.9s draw_polyline ease-in forwards;
+  animation: 0.9s draw_polyline ease-in forwards;
+}
+
+.food-safety-pic:hover .path_5 {
+  -webkit-animation: 0.5s 0.7s draw_path ease-in forwards;
+  -moz-animation: 0.5s 0.7s draw_path ease-in forwards;
+  -ms-animation: 0.5s 0.7s draw_path ease-in forwards;
+  animation: 0.5s 0.7s draw_path ease-in forwards;
+}
+
+// =================================================================================
+// svg = Project Link to: the met compass
+// =================================================================================
+#compass-svg {
+  transform: translate(160px, -220px);
+}
+
+.polyline_6 {
+  stroke-width: 1;
+  fill: transparent; 
+  stroke-dasharray: 0 300;
+  stroke-dashoffset: 0;
+}
+
+.path_6 {
+  stroke-width: 5;
+  fill: transparent;  
+  stroke-dasharray: 0 30;
+  stroke-dashoffset: 0;
+}
+
+.compass-pic:hover .polyline_6 {
+  -webkit-animation: 0.9s draw_polyline ease-in forwards;
+  -moz-animation: 0.9s draw_polyline ease-in forwards;
+  -ms-animation: 0.9s draw_polyline ease-in forwards;
+  animation: 0.9s draw_polyline ease-in forwards;
+}
+
+.compass-pic:hover .path_6 {
+  -webkit-animation: 0.5s 0.7s draw_path ease-in forwards;
+  -moz-animation: 0.5s 0.7s draw_path ease-in forwards;
+  -ms-animation: 0.5s 0.7s draw_path ease-in forwards;
+  animation: 0.5s 0.7s draw_path ease-in forwards;
+}
+
+// =================================================================================
+// svg = arrows beside the "download resume" div 
+// =================================================================================
+#arrows-svg {
+  position: fixed;
+  bottom: 210px;
+  right: 80px;
+}
+
+#arrows-svg-rotate90 {
+  position: fixed;
+  top: 190px;
+  left: 108px;
+  transform: rotate(-90deg) scale(0.8);
+}
+
+#arrows-svg-rotate90-big {
+  transform: rotate(-90deg) scale(1.3);
+}
+
+#arrows-svg-rotate90-big2 {
+  position: absolute;
+  z-index: 30;
+  top: 1950px;
+  left: 80%;
+  transform: rotate(-90deg) scale(1.3);
+}
+
+.polyline_arrow {
+  stroke-width: 1;
+  fill: transparent;
+
+  //animation: draw_arrow
+  -webkit-animation: 2s infinite draw_arrow ease-in alternate;
+  -moz-animation: 2s infinite draw_arrow ease-in alternate;
+  -ms-animation: 2s infinite draw_arrow ease-in alternate;
+  animation: 2s infinite draw_arrow ease-in alternate;
+}
+
+//animation keyframes: draw_arrow
+@keyframes draw_arrow {
+  0% { stroke-dasharray: 0 200; stroke-dashoffset: 0; }
+  100% { stroke-dasharray: 200; stroke-dashoffset: 0; }
+}
+@-webkit-keyframes draw_arrow {
+  0% { stroke-dasharray: 0 200; stroke-dashoffset: 0; }
+  100% { stroke-dasharray: 200; stroke-dashoffset: 0; }
+}
+@-moz-keyframes draw_arrow {
+  0% { stroke-dasharray: 0 200; stroke-dashoffset: 0; }
+  100% { stroke-dasharray: 200; stroke-dashoffset: 0; }
+}
+@-ms-keyframes draw_arrow {
+  0% { stroke-dasharray: 0 200; stroke-dashoffset: 0; }
+  100% { stroke-dasharray: 200; stroke-dashoffset: 0; }
+}
+
+// =================================================================================
+// svg = index.html -> contact info corner. / z-index: 34
+// =================================================================================
+#contact-corner-svg {
+  position: fixed;
+  z-index: 34;
+  bottom: 3 * $leading;
+  right: 1 * ($grid-width + $grid-gutter);
+}
+
+.polyline_corner {
+  stroke-width: 1.5;
+  fill: transparent;
+  stroke-dasharray: 0 30;
+  stroke-dashoffset: 0;
+}
+
+.path_corner {
+  stroke-width: 1;
+  fill: transparent;
+  stroke-dasharray: 0 30;
+  stroke-dashoffset: 0;  
+}
+
+.contact-info-container:hover .polyline_corner {
+  -webkit-animation: 0.75s 0.2s draw_path ease-in forwards;
+  -moz-animation: 0.75s 0.2s draw_path ease-in forwards;
+  -ms-animation: 0.75s 0.2s draw_path ease-in forwards;
+  animation: 0.75s 0.2s draw_path ease-in forwards;
+}
+
+.contact-info-container:hover .path_corner {
+  -webkit-animation: 0.5s 0.75s draw_path ease-in forwards;
+  -moz-animation: 0.5s 0.75s draw_path ease-in forwards;
+  -ms-animation: 0.5s 0.75s draw_path ease-in forwards;
+  animation: 0.5s 0.75s draw_path ease-in forwards;
+}

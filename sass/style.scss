@@ -1,0 +1,404 @@
+@import 'reset';
+@import 'variables';
+@import 'index';
+@import 'about';
+@import 'projects';
+@import 'shadowelections';
+@import 'svg';
+
+
+header{
+   position: fixed;
+   z-index: 300;
+   width: 100%;
+   height: 5px;
+   top: 0;
+   background-color: rgba(0, 0, 0, 0.8);
+   mix-blend-mode: multiply;
+}
+
+footer {
+   mix-blend-mode: multiply;
+   position: fixed;
+   z-index: 300;
+   width: 100%;
+   height: 70px;
+   bottom:0;
+   background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+}
+
+.left-bg {
+   position: fixed;
+   top: 0;
+   z-index: 10;
+   width: 300px;
+   height: 100%;
+   img {
+      width: 550px;  
+   }
+}
+
+// =================================================================================
+// Background Img: paper
+// =================================================================================
+.bg-img {
+   position: fixed;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   z-index: -100;
+   opacity: 0.1;
+   
+   img{
+      width: 100%;
+      height: 100%;     
+   }
+}
+
+// =================================================================================
+// Logo Area
+// =================================================================================
+.logo-area {
+   mix-blend-mode: multiply;
+   position: fixed;
+   z-index: 90;
+   top: 3 * $leading;
+   left: 1 * ($grid-width + $grid-gutter);
+   cursor: pointer;
+
+   .logo-text-container {
+      position: absolute;
+      left: 0.2 * ($grid-width + $grid-gutter)
+   }
+
+   h1 {
+      line-height: 3.25 * $leading;
+      font-size: 1.25 * $leading;
+      font-family: 'Petit Formal Script', cursive;
+      text-align: center;
+      color: black;
+   }
+
+   .logo-border{
+      position: absolute;
+      width: 1 * ($grid-width + $grid-gutter);
+      height: 1 * ($grid-width + $grid-gutter);
+      border-radius: 50%;
+      border: solid 0.5px black;
+      transition: all 2s;
+      -moz-transition: all 2s;
+      -webkit-transition: all 2s;
+      -o-transition: all 2s;
+
+      //animation: spin_in
+      -webkit-animation-name: spin_in;
+      -webkit-animation-duration: 4000ms;
+      -webkit-animation-iteration-count: infinite;
+      -webkit-animation-timing-function: linear;
+      
+      -moz-animation-name: spin_in;
+      -moz-animation-duration: 4000ms;
+      -moz-animation-iteration-count: infinite;
+      -moz-animation-timing-function: linear;
+
+      -ms-animation-name: spin_in;
+      -ms-animation-duration: 4000ms;
+      -ms-animation-iteration-count: infinite;
+      -ms-animation-timing-function: linear;
+    
+      animation-name: spin_in;
+      animation-duration: 4000ms;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+   }
+
+   @-ms-keyframes spin_in {
+      from { -ms-transform: rotate(0deg); }
+      to { -ms-transform: rotate(360deg); }
+   }
+   @-moz-keyframes spin_in {
+      from { -moz-transform: rotate(0deg); }
+      to { -moz-transform: rotate(360deg); }
+   }
+   @-webkit-keyframes spin_in {
+      from { -webkit-transform: rotate(0deg); }
+      to { -webkit-transform: rotate(360deg); }
+   }
+   @keyframes spin_in {
+      from { transform:rotate(0deg); }
+      to { transform:rotate(360deg); }
+   }
+
+   .logo-border-dot {
+      content: '';
+      position: absolute;
+      top: 2 * $leading;
+      left: 76.5px;
+      width: 4px;
+      height: 4px;
+      border-radius: 50px;
+      border: solid 1px white;
+      background-color: white;
+   }
+
+   .logo-border-rotate{
+      position: absolute;
+      top: 0;
+      width: 1 * ($grid-width + $grid-gutter);
+      height: 1 * ($grid-width + $grid-gutter);
+      
+      //animation: spin_out
+      -webkit-animation-name: spin_out;
+      -webkit-animation-duration: 4000ms;
+      -webkit-animation-iteration-count: infinite;
+      -webkit-animation-timing-function: linear;
+      
+      -moz-animation-name: spin_out;
+      -moz-animation-duration: 4000ms;
+      -moz-animation-iteration-count: infinite;
+      -moz-animation-timing-function: linear;
+      
+      -ms-animation-name: spin_out;
+      -ms-animation-duration: 4000ms;
+      -ms-animation-iteration-count: infinite;
+      -ms-animation-timing-function: linear;
+    
+      animation-name: spin_out;
+      animation-duration: 4000ms;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+   }
+
+   @-ms-keyframes spin_out {
+      from { -ms-transform: rotate(0deg); }
+      to { -ms-transform: rotate(-360deg); }
+   }
+   @-moz-keyframes spin_out {
+      from { -moz-transform: rotate(0deg); }
+      to { -moz-transform: rotate(-360deg); }
+   }
+   @-webkit-keyframes spin_out {
+      from { -webkit-transform: rotate(0deg); }
+      to { -webkit-transform: rotate(-360deg); }
+   }
+   @keyframes spin_out {
+      from { transform:rotate(0deg); }
+      to { transform:rotate(-360deg); }
+   }
+
+   .logo-border-rotate-dot {
+      content: '';
+      position: absolute;
+      top: 0px;
+      left: 80px;
+      width: 5.5px;
+      height: 5.5px;
+      border-radius: 50px;
+      border: solid 1px white;
+      background-color: white;
+   }
+}
+
+// =================================================================================
+// Main Menu Area
+// =================================================================================
+.main-menu-container {
+   position: fixed;
+   z-index: 30;
+   top: 10 * $leading;
+   left: 1.1 * ($grid-width + $grid-gutter);
+   
+   ul {
+      font-size: 14px;
+      text-align: center;
+      font-family: 'Rajdhani', sans-serif;
+      letter-spacing: 2px;
+   }
+
+   a {
+      cursor: crosshair;
+      text-decoration: none;
+      color: black;
+   }
+
+   .li{
+      opacity: 0.4;
+      margin-top: 1 * $leading;
+      margin-bottom:0;
+      padding-bottom: 3px;
+      // border-bottom: dotted 1px transparent;
+      transition: 0.4s ease-in; 
+   }
+
+   #home:after {
+      content: "";
+      position: absolute;
+      top: 30px;
+      left: 30px;
+      width: 1px;
+      height: 1px;
+      background-color: black;
+      transition: 0.4s ease-in; 
+      transform-origin: center bottom;
+   }
+
+   #projects:after {
+      content: "";
+      position: absolute;
+      top: 72px;
+      left: 30px;
+      width: 1px;
+      height: 1px;
+      background-color: black;
+      transition: 0.4s ease-in; 
+      transform-origin: center bottom;
+   }
+
+   #about:after {
+      content: "";
+      position: absolute;
+      top: 112px;
+      left: 30px;
+      width: 1px;
+      height: 1px;
+      background-color: black;
+      transition: 0.4s ease-in; 
+      transform-origin: center bottom;
+   }
+
+  #contact:after {
+      content: "";
+      position: absolute;
+      top: 154px;
+      left: 30px;
+      width: 1px;
+      height: 1px;
+      background-color: black;
+      transition: 0.4s ease-in; 
+      transform-origin: center bottom;
+   }
+
+   .li:hover {
+      transition: 0.4s ease-in; 
+      // border-bottom: dotted 1px black;
+      opacity: 1;
+   }
+
+   .li:hover:after {
+      transform: scaleX(80);
+   }
+}
+
+// =================================================================================
+// Main Menu Area: contact info left.
+// =================================================================================
+.contact-info-container-p {
+   position: fixed;
+   z-index: 60;
+   width: 226px;
+   bottom: 10%;
+   left: 0;
+   
+   p{
+      font-size: 13px;
+      line-height: 25px;
+      letter-spacing: 1px;
+      text-align: center;
+   }
+}
+
+// =================================================================================
+// Keyframes & Animation: window onload fade-in
+// =================================================================================
+@-webkit-keyframes fade_in {from { opacity: 0; } to { opacity: 1; }}
+@-moz-keyframes fade_in {from { opacity: 0; } to { opacity: 1; }}
+@-ms-keyframes fade_in {from { opacity: 0; } to { opacity: 1; }}
+@keyframes fade_in {from { opacity: 0; } to { opacity: 1; }}
+
+.fade-in {
+   //animation: fade_in
+   -webkit-animation: 2s fade_in ease-in forwards;
+   -moz-animation: 2s fade_in ease-in forwards;
+   -ms-animation: 2s fade_in ease-in forwards;
+   animation: 2s fade_in ease-in forwards;
+}
+
+// =================================================================================
+// section title styles.
+// =================================================================================
+.section-title {
+   h2{
+      font-size: 30px;
+      font-family: 'Domine', serif;
+   }
+   p{
+      font-size: 15px;
+      font-family: 'Open Sans', sans-serif;
+      letter-spacing: 0.5px;
+      line-height: 20px;
+      margin-top: 20px;
+   }
+}
+
+// =================================================================================
+// short hr styles
+// =================================================================================
+.short-hr {
+   position: relative;
+   width: 30px;
+   height: 1px;
+}
+
+.black-bg {
+   background-color: black;
+}
+
+.white-bg {
+   background-color: white;
+}
+
+
+// =================================================================================
+// scroll down arrow
+// =================================================================================
+//left: 50%
+#scroll-down-arrow {
+   position: absolute;
+   z-index: 400;
+   bottom: 5%;
+   left: 50%;
+   cursor: s-resize;
+}
+//no left
+#scroll-arrow {
+   position: absolute;
+   z-index: 400;
+   bottom: 5%;
+   cursor: s-resize;
+}
+
+// =================================================================================
+// align
+// =================================================================================
+.align-right {
+   right: 1 * ($grid-width + $grid-gutter);
+}
+
+.align-left {
+   left: 3 * ($grid-width + $grid-gutter);
+}
+// =================================================================================
+// letter spacing
+// =================================================================================
+//letter-spacing: 1
+.letter-space-1 {
+   letter-spacing: 1px;
+}
+
+//letter-spacing: 0.5
+.letter-space-05 {
+   letter-spacing: 0.5px;
+}
+
+
+

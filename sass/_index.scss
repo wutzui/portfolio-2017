@@ -1,0 +1,592 @@
+// =================================================================================
+// P5 Canvas
+// =================================================================================
+#defaultCanvas0 {
+   mix-blend-mode: multiply;
+   position: fixed;
+   z-index: -99;
+   opacity: 0.2;
+}
+
+// =================================================================================
+// Index Img elements styles.
+// =================================================================================
+.text-container {
+   position: relative;
+   opacity: 0;
+   cursor: pointer;
+   transition: 0.2s ease-in;   
+}
+
+.index-caption {
+   margin-bottom: 3px;
+   letter-spacing: 1px;
+   font-size: 9px;
+   color: black;
+}
+
+.index-ptitle {
+   letter-spacing: 1px;
+   font-size: 17px;
+   color: black;   
+}
+
+.view-tag {
+   margin-top: 21px;
+   margin-left: 10px;
+   height: 13px;
+   width: 34px;
+   font-size: 9px;
+   letter-spacing: 1px;
+   line-height: 14px;
+   background-color: black;
+   border: solid 1px black;
+   color: white;
+   text-align: center;
+   font-weight: 700;
+   cursor: pointer;
+}
+
+.right-align {
+   margin-left: 2.2 * ($grid-width + $grid-gutter);
+}
+
+.right-align2 {
+   margin-left: 0.8 * ($grid-width + $grid-gutter);
+}
+
+// =================================================================================
+// animation keyframes = TEXT APPEAR -> could applied to similar divs.
+// =================================================================================
+@-webkit-keyframes text_appear {from { opacity: 0; } to { opacity: 1; }}
+@-moz-keyframes text_appear {from { opacity: 0; } to { opacity: 1; }}
+@-ms-keyframes text_appear {from { opacity: 0; } to { opacity: 1; }}
+@keyframes text_appear {from { opacity: 0; } to { opacity: 1; }}
+
+// =================================================================================
+// Img = Project Link to: calc4living.nyc // z-index: 5
+// =================================================================================
+.calc-nyc-pic {
+   mix-blend-mode: multiply;
+   position: fixed;
+   z-index: 5;
+   top: 13%;
+   left: 3 * ($grid-width + $grid-gutter);
+   height: 14 * $leading;
+   cursor: grab;
+   cursor: -webkit-grab;
+   
+   .calc-nyc-text-container {
+      top: -14.75 * $leading;
+      left: 3 * ($grid-width + $grid-gutter);
+   }
+
+   img {
+      width: 4 * ($grid-width + $grid-gutter);
+      opacity: 0.2;
+      transform: rotate(10deg);
+      transition: 0.2s ease-in;
+   }
+}
+
+.calc-nyc-text-container:hover .view-tag{
+   color: black;
+   border: solid 1px black;
+   background: transparent;
+   @include transition; 
+}
+
+.calc-nyc-pic:hover .calc-nyc-text-container {
+   animation-delay: 0.5s;
+   -webkit-animation: 1s text_appear ease-in forwards;
+   -moz-animation: 1s text_appear ease-in forwards;
+   -ms-animation: 1s text_appear ease-in forwards;
+   animation: 1s text_appear ease-in forwards;
+}
+
+.calc-nyc-pic:hover img {
+   transition: 0.2s ease-in;
+   transform: rotate(8deg) scale(0.99, 0.99);
+   opacity: 1;
+}
+
+// =================================================================================
+// Img = Project Link to: 2016 Shadow Elections // z-index: 6
+// =================================================================================
+.shadow-elections-pic {
+   mix-blend-mode: multiply;
+   position: fixed;
+   z-index: 6;
+   top: 13 * $leading;
+   left: 3.8 * ($grid-width + $grid-gutter);
+   height: 5 * $leading;
+   cursor: grab;
+   cursor: -webkit-grab;
+   
+   .shadow-elections-text-container {
+      top: -11.4 * $leading;
+      left: 0.2 * ($grid-width + $grid-gutter);
+   }
+
+   img {
+      width: 5.3 * ($grid-width + $grid-gutter);
+      opacity: 0.2;
+      transform: rotate(4deg);
+      transition: 0.2s ease-in;
+   }
+}
+
+.shadow-elections-text-container:hover .view-tag{
+   color: black;
+   border: solid 1px black;
+   background: transparent;
+   @include transition; 
+}
+
+.shadow-elections-pic:hover .shadow-elections-text-container {
+   animation-delay: 0.5s;
+   -webkit-animation: 1s text_appear ease-in forwards;
+   -moz-animation: 1s text_appear ease-in forwards;
+   -ms-animation: 1s text_appear ease-in forwards;
+   animation: 1s text_appear ease-in forwards;
+}
+
+.shadow-elections-pic:hover img {
+   transition: 0.2s ease-in;
+   transform: rotate(8deg) scale(0.99, 0.99);
+   opacity: 1;
+}
+
+// =================================================================================
+// Img = Project Link to: water cycle // z-index: 5
+// =================================================================================
+.water-cycle-pic {
+   mix-blend-mode: multiply;
+   position: fixed;
+   z-index: 5;
+   top: 12%;
+   left: 6.6 * ($grid-width + $grid-gutter);
+   cursor: grab;
+   cursor: -webkit-grab;
+   
+   .water-cycle-text-container {
+      top: -10.1 * $leading;
+      left: 3 * ($grid-width + $grid-gutter);
+   }
+
+   img {
+      width: 3 * ($grid-width + $grid-gutter);
+      opacity: 0.2;
+      transform: rotate(-7deg);
+      transition: 0.2s ease-in;
+   }
+}
+
+.water-cycle-text-container:hover .view-tag{
+   color: black;
+   border: solid 1px black;
+   background: transparent;
+   @include transition; 
+}
+
+.water-cycle-pic:hover .water-cycle-text-container {
+   animation-delay: 0.5s;
+   -webkit-animation: 1s text_appear ease-in forwards;
+   -moz-animation: 1s text_appear ease-in forwards;
+   -ms-animation: 1s text_appear ease-in forwards;
+   animation: 1s text_appear ease-in forwards;
+}
+
+.water-cycle-pic:hover img {
+   transition: 0.2s ease-in;
+   transform: rotate(-1deg) scale(0.99, 0.99);
+   opacity: 1;
+}
+
+// =================================================================================
+// Img = Project Link to: tactly // z-index: 6
+// =================================================================================
+.tactly-pic {
+   mix-blend-mode: multiply;
+   position: fixed;
+   z-index: 6;
+   top: 6 * $leading;
+   right: 3.5 * ($grid-width + $grid-gutter);
+   height: 10 * $leading;
+   cursor: grab;
+   cursor: -webkit-grab;
+   
+   .tactly-text-container {
+      top: -1.5 * $leading;
+      left: 2.9 * ($grid-width + $grid-gutter);
+   }
+
+   img {
+      width: 4 * ($grid-width + $grid-gutter);
+      opacity: 0.2;
+      transform: rotate(-2deg);
+      transition: 0.2s ease-in;
+   }
+}
+
+.tactly-text-container:hover .view-tag{
+   color: black;
+   border: solid 1px black;
+   background: transparent;
+   @include transition; 
+}
+
+.tactly-pic:hover .tactly-text-container {
+   animation-delay: 0.5s;
+   -webkit-animation: 1s text_appear ease-in forwards;
+   -moz-animation: 1s text_appear ease-in forwards;
+   -ms-animation: 1s text_appear ease-in forwards;
+   animation: 1s text_appear ease-in forwards;
+}
+
+.tactly-pic:hover img {
+   transition: 0.2s ease-in;
+   transform: rotate(-6deg) scale(0.99, 0.99);
+   opacity: 1;
+}
+
+// =================================================================================
+// Img = Project Link to: food safety // z-index: 7
+// =================================================================================
+.food-safety-pic {
+   mix-blend-mode: multiply;
+   position: fixed;
+   z-index: 7;
+   top: 1.5 * $leading;
+   right: 1 * ($grid-width + $grid-gutter);
+   height: 6 * $leading;
+   cursor: grab;
+   cursor: -webkit-grab;
+   
+   .food-safety-text-container {
+      top: -8 * $leading;
+      left: -1.9 * ($grid-width + $grid-gutter);
+   }
+
+   img {
+      width: 3 * ($grid-width + $grid-gutter);
+      opacity: 0.2;
+      transform: rotate(4deg);
+      transition: 0.2s ease-in;
+   }
+}
+
+.food-safety-text-container:hover .view-tag{
+   color: black;
+   border: solid 1px black;
+   background: transparent;
+   @include transition; 
+}
+
+.food-safety-pic:hover .food-safety-text-container {
+   animation-delay: 0.5s;
+   -webkit-animation: 1s text_appear ease-in forwards;
+   -moz-animation: 1s text_appear ease-in forwards;
+   -ms-animation: 1s text_appear ease-in forwards;
+   animation: 1s text_appear ease-in forwards;
+}
+
+.food-safety-pic:hover img {
+   transition: 0.2s ease-in;
+   transform: rotate(1deg) scale(0.99, 0.99);
+   opacity: 1;
+}
+
+// =================================================================================
+// Img = Project Link to: the met compass // z-index: 8
+// =================================================================================
+.compass-pic {
+   mix-blend-mode: multiply;
+   position: fixed;
+   z-index: 8;
+   bottom: 1 * $leading;
+   left: 1 * ($grid-width + $grid-gutter);
+   height: 8 * $leading;
+   cursor: grab;
+   cursor: -webkit-grab;
+
+   .compass-text-container {
+      top: -8 * $leading;
+      left: 2.6 * ($grid-width + $grid-gutter);
+   }
+
+   img {
+      width: 3.2 * ($grid-width + $grid-gutter);
+      opacity: 0.2;
+      transform: rotate(4deg);
+      transition: 0.2s ease-in;
+   }
+}
+
+.compass-text-container:hover .view-tag{
+   color: black;
+   border: solid 1px black;
+   background: transparent;
+   @include transition; 
+}
+
+.compass-pic:hover .compass-text-container {
+   animation-delay: 0.5s;
+   -webkit-animation: 1s text_appear ease-in forwards;
+   -moz-animation: 1s text_appear ease-in forwards;
+   -ms-animation: 1s text_appear ease-in forwards;
+   animation: 1s text_appear ease-in forwards;
+}
+
+.compass-pic:hover img {
+   transition: 0.2s ease-in;
+   transform: rotate(1deg) scale(0.99, 0.99);
+   opacity: 1;
+}
+
+// =================================================================================
+// Img: Other drag pics.
+// =================================================================================
+.elephant-pic {
+   position: fixed;
+   z-index: 20;
+   bottom: 6%;
+   right: 28%;
+   width: 3 * ($grid-width + $grid-gutter);
+   cursor: grab;
+   cursor: -webkit-grab;
+}
+
+.donkey-pic {
+   position: fixed;
+   z-index: 20;
+   bottom: 9%;
+   left: 40%;
+   width: 1 * ($grid-width + $grid-gutter);
+   cursor: grab;
+   cursor: -webkit-grab;
+
+}
+
+.eagle-pic{
+   position: fixed;
+   z-index: 20;
+   top: 10%;
+   left: 30%;
+   width: 1.5 * ($grid-width + $grid-gutter);
+   opacity: 0.8;
+   cursor: grab;
+   cursor: -webkit-grab;
+}
+
+.cloud-pic1 {
+   mix-blend-mode: multiply;
+   position: fixed;
+   opacity: 0.5;
+   width: 5 * ($grid-width + $grid-gutter);
+   margin-top: 50px;
+}
+
+.cloud-pic2 {
+   position: fixed;
+   mix-blend-mode: multiply;
+   opacity: 0.5;
+   width: 3.5 * ($grid-width + $grid-gutter);
+   bottom: 8%;
+   right: 0;
+}
+
+.tree-branch-1 {
+   position: fixed;
+   mix-blend-mode: multiply;
+   opacity: 0.7;
+   width: 3.5 * ($grid-width + $grid-gutter);
+   bottom: 35%;
+   right: 0;
+}
+
+// =================================================================================
+// Div: Drag Me!
+// =================================================================================
+.drag-me {
+   mix-blend-mode: multiply;
+   position: fixed;
+   top: 35%;
+   left: 3 * ($grid-width + $grid-gutter);
+   z-index: 10;
+   background-color: black;
+   width: 90px;
+   height: 90px;
+   border-radius: 50px;
+   color: white;
+   text-align: center;
+   font-size: 13px;
+   line-height: 90px;
+   letter-spacing: 1px;
+   transition: 1s;
+   cursor: grab;
+   cursor: -webkit-grab;
+
+   -webkit-animation: 1s infinite drag-scale ease-in-out alternate;
+   -moz-animation: 1s infinite drag-scale ease-in-out alternate;
+   -ms-animation: 1s infinite drag-scale ease-in-out alternate;
+   animation: 1s infinite drag-scale ease-in-out alternate;
+}
+
+.drag-me:hover {
+   transition: 1s;
+   background-color: white;
+   color: black;
+   border: solid 1px black;
+   transform: scale(1.1);
+   cursor: grab;
+}
+
+@-webkit-keyframes drag-scale { 
+   0% { transform: scale(1); opacity: 1; } 
+   100% { transform: scale(1.05); opacity: 0.5; } 
+}
+@-moz-keyframes drag-scale { 
+   0% { transform: scale(1); opacity: 1; } 
+   100% { transform: scale(1.05); opacity: 0.5; } 
+}
+@-ms-keyframes drag-scale { 
+   0% { transform: scale(1); opacity: 1; } 
+   100% { transform: scale(1.05); opacity: 0.5; } 
+}
+@keyframes drag-scale { 
+   0% { transform: scale(1); opacity: 1; } 
+   100% { transform: scale(1.05); opacity: 0.5; } 
+}
+
+
+// =================================================================================
+// hi paragraph container.
+// =================================================================================
+.hi-pp {
+   position: fixed; //translate must come with position.
+   width: 100%;
+   height: 100%;
+   opacity: 0.75;
+   text-align: center;
+   letter-spacing: 1px;
+   transition: 0.5s ease-in;
+   
+   .hi{
+      margin: 0 auto;
+      line-height: 45px;
+      font-size: 45px;
+      font-family: 'Domine', serif;
+   }
+
+   .p{
+      width: 6 * ($grid-width + $grid-gutter);
+      margin: 0 auto;
+      line-height: 21px;
+      font-size: 14px;
+   }
+}
+
+
+// =================================================================================
+// Contact Container / z-index: 30
+// =================================================================================
+.contact-info-container {
+   mix-blend-mode: multiply;
+   position: fixed;
+   z-index: 30;
+   bottom: 3 * $leading;
+   right: 1 * ($grid-width + $grid-gutter);
+   width: 2.5 * ($grid-width + $grid-gutter);
+   height: 3.5 * $leading;
+   background-color: transparent;
+   color: black;
+   border: solid 1px black;
+   padding: 0.8 * $leading;
+   letter-spacing: 1px;
+   transition: 0.7s ease-in;
+   cursor: se-resize;
+
+
+   h6 {
+      font-family: 'Rajdhani', sans-serif;
+      font-size: 18px;
+      margin-bottom: 10px;
+   }
+
+   p {
+      line-height: 20px;
+      font-size: 12px;
+   }
+}
+
+.contact-page-link {
+   position: fixed;
+   z-index: 32;
+   bottom: 3 * $leading;
+   right: 1 * ($grid-width + $grid-gutter);
+   width: 5px;
+   height: 5px;
+   background-color: transparent;
+   transition: 0.5s ease-in;
+   transform-origin: bottom right;
+}
+
+.more-details {
+   font-size: 9px;
+   color: transparent;
+   transition: 0.5s ease-in;
+   transform: translate(100px, 10px) rotate(90deg);
+}
+
+.contact-info-container:hover {
+   transition: 0.25s ease-in;
+   background-color: black;
+   color: white;
+   border: solid 1px black;
+}
+
+.contact-info-container:hover .contact-page-link {
+   background-color: rgb(255, 255, 255);
+   transition: 0.5s 0.1s ease-in;
+   transform: scale(5);
+}
+
+.contact-info-container:hover .more-details {
+   color: white;
+   transition: 0.25s 0.4s ease-in;
+}
+
+// =================================================================================
+// Download Resume
+// =================================================================================
+.download-resume {
+   position: fixed;
+   z-index: 29;
+   bottom: 8.7 * $leading;
+   right: 1.25 * ($grid-width + $grid-gutter);
+   width: 1.7 * ($grid-width + $grid-gutter);
+   letter-spacing: 1px;
+   transition: 0.5s ease-in;
+   cursor: crosshair;
+   opacity: 0.2;
+
+   //animation: download_opacity
+   -webkit-animation: 2s infinite download_opacity ease-in alternate;
+   -moz-animation: 2s infinite download_opacity ease-in alternate;
+   -ms-animation: 2s infinite download_opacity ease-in alternate;
+   animation: 2s infinite download_opacity ease-in alternate;
+
+   p {
+      margin-bottom: 10px; 
+      font-size: 11px;
+      color: black;
+   }
+}
+
+@-webkit-keyframes download_opacity { 0% {opacity: 0.5;} 100% {opacity: 1;} }
+@-moz-keyframes download_opacity { 0% {opacity: 0.5;} 100% {opacity: 1;} }
+@-ms-keyframes download_opacity { 0% {opacity: 0.5;} 100% {opacity: 1;} }
+@keyframes download_opacity { 0% {opacity: 0.5;} 100% {opacity: 1;} }
+
+

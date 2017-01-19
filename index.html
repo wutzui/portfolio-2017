@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Yizzy Wu | Home</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!-- jQuery -->
+    <script src="scripts/jquery.js"></script>
+    <!-- jQuery Ui-->
+	<script type="text/javascript" src="scripts/jquery-ui.min.js" async></script>
+	<!-- P5.JS-->
+	<script type="text/javascript" src="scripts/p5.min.js" async></script>
+	<!-- Custom Theme JavaScript -->
+	<script type="text/javascript" src="scripts/main_script.js" async></script>
+	<script type="text/javascript" src="scripts/jquery_drag.js" async></script>
+</head>
+<body class="fade-in">
+
+	<header></header>
+	<div class="bg-img"><img src="img/paper_back.jpg" alt="paper_background"></div>
+	<div id="myCanvas"></div>
+
+	<!--hi paragraph in the middle.-->
+	<div id="hi-pp" class="hi-pp" style="transform: translateY(40%);">
+		<div class="hi">Hi! I'm Yizzy.</div><br>
+		<div class="p">I'm a designer with diverse interests of ux design and front-end dev. My working projects are focusing on data, HCD interaction and social studies. 
+		</div>
+	</div>
+
+	<!--Logo Area-->
+	<a href="index.html">
+	<div id="logoArea" class="logo-area">
+		<div id="logo-border-rotate" class="logo-border-rotate">
+			<div id="logo-border-rotate-dot" class="logo-border-rotate-dot"></div>
+		</div>
+		<div id="logo-border" class="logo-border">
+			<div id="logo-border-dot" class="logo-border-dot"></div>
+		</div>
+		<div id="logo-text-container" class="logo-text-container">
+			<h1 id="logo-text" class="logo-text">Yw.</h1>
+		</div>
+	</div>
+	</a>
+
+	<!--Main Menu-->
+	<div id="main-menu" class="main-menu-container">
+		<svg id="arrows-svg-rotate90" width= "20" height="30" xmlns="http://www.w3.org/2000/svg">
+			<polyline id="polyline_arrow" class="polyline_arrow"
+			points="20,0 0,10 20,20 20,5 0,15 20,25 20,10 0,20 20,30" stroke="black"/>
+		</svg>	
+		<ul>
+			<li id="home" class="li"><a href="index.html">Home</a></li>
+			<li id="projects" class="li"><a href="html/projects.html">Projects</a></li>
+			<li id="about" class="li"><a href="html/about.html">About</a></li>
+<!-- 			<li id="contact" class="li"><a href="html/about.html#contact-me">Contact</a></li> -->
+		</ul>
+	</div>
+
+	<!--****************************************************************************************-->
+
+	<!--Drag & Link: calc4living.nyc-->
+	<a href="html/projects_calc_nyc.html">
+	<div class="calc-nyc-pic drag hover" id="calc-nyc-pic">
+		<img src="img/calc_nyc.png" alt="calc-nyc-pic">
+		<div class="calc-nyc-text-container text-container">
+			<p class="index-caption">FEATURED PROJECT</p>
+			<h6 class="index-ptitle">CALC4LIVING.NYC</h6>
+			<p class="view-tag">VIEW</p>
+		</div>
+		<svg id="calc-nyc-svg" width= "200" height="51" xmlns="http://www.w3.org/2000/svg">
+			<polyline id="polyline_1" class="polyline_1" points="1,51 51,1 200,1" stroke="black"/>
+			<path id="path_1" class="path_1" d="M170 3 H200" stroke="black"/>
+		</svg>
+	</div>
+	</a>
+
+	<!--Drag & Link: shadow elections-->
+	<a href="html/shadow_elections.html">
+	<div class="shadow-elections-pic drag hover" id="shadow-elections-pic">
+		<img src="img/shadow_elections.png" alt="calc-nyc-pic">
+		<div class="shadow-elections-text-container text-container">
+			<p class="index-caption">FEATURED PROJECT</p>
+			<h6 class="index-ptitle">2016 SHADOW ELECTIONS</h6>
+			<p class="view-tag right-align">VIEW</p>
+		</div>
+		<svg id="shadow-elections-svg" width= "300" height="51" xmlns="http://www.w3.org/2000/svg">
+			<polyline id="polyline_2" class="polyline_2" points="300,51 250,1 30,1" stroke="black"/>
+			<path id="path_2" class="path_2" d="M60 3 H30" stroke="black"/>
+		</svg>
+	</div>
+	</a>
+
+	<!--Drag & Link: water cycle-->
+	<a href="html/projects_water_cycle.html">
+	<div class="water-cycle-pic drag hover" id="water_cycle-pic">
+		<img src="img/umbrella.png" alt="water-cycle-pic">
+		<div class="water-cycle-text-container text-container">
+			<p class="index-caption">FEATURED PROJECT</p>
+			<h6 class="index-ptitle">WATER CYCLE</h6>
+			<p class="view-tag">VIEW</p>
+		</div>
+		<svg id="water-cycle-svg" width= "200" height="51" xmlns="http://www.w3.org/2000/svg">
+			<polyline id="polyline_3" class="polyline_3" points="1,50 50,1 163,1" stroke="black"/>
+			<path id="path_3" class="path_3" d="M133 3 H163" stroke="black"/>
+		</svg>
+	</div>
+	</a>
+
+	<!--Drag & Link: tactly-->
+	<a href="html/projects_tactly.html">
+	<div class="tactly-pic drag hover" id="tactly-pic">
+		<img src="img/tactly_computer.png" alt="tactly-pic">
+		<div class="tactly-text-container text-container">
+			<p class="index-caption">FEATURED PROJECT</p>
+			<h6 class="index-ptitle">TACTLY</h6>
+			<p class="view-tag">VIEW</p>
+		</div>
+		<svg id="tactly-svg" width= "160" height="51" xmlns="http://www.w3.org/2000/svg">
+			<polyline id="polyline_4" class="polyline_4" points="0,0 50,50 154,50" stroke="black"/>
+			<path id="path_4" class="path_4" d="M124 48 H154" stroke="black"/>
+		</svg>
+	</div>
+	</a>
+	<!--Drag & Link: food safety-->
+	<a href="html/projects_food_safety.html">
+	<div class="food-safety-pic drag hover" id="food-safety-pic">
+		<img src="img/chinese_food.png" alt="food-safety-pic">
+		<div class="food-safety-text-container text-container">
+			<p class="index-caption">FEATURED PROJECT</p>
+			<h6 class="index-ptitle">FOOD SAFETY</h6>
+			<p class="view-tag right-align2">VIEW</p>
+		</div>
+		<svg id="food-safety-svg" width= "160" height="51" xmlns="http://www.w3.org/2000/svg">
+			<polyline id="polyline_5" class="polyline_5" points="160,51 110,1 0,0" stroke="black"/>
+			<path id="path_5" class="path_5" d="M30 1 H0" stroke="black"/>
+		</svg>
+	</div>
+	</a>
+
+	<!--Drag & Link: the met compass-->
+	<a href="html/projects_compass.html">
+	<div class="compass-pic drag hover" id="compass-pic">
+		<img src="img/compass.png" alt="compass-pic">
+		<div class="compass-text-container text-container">
+			<p class="index-caption">FEATURED PROJECT</p>
+			<h6 class="index-ptitle">THE MET: COMPASS</h6>
+			<p class="view-tag">VIEW</p>
+		</div>
+		<svg id="compass-svg" width= "215" height="51" xmlns="http://www.w3.org/2000/svg">
+			<polyline id="polyline_6" class="polyline_6" points="1,51 51,1 215,1" stroke="black"/>
+			<path id="path_6" class="path_6" d="M185 3 H215" stroke="black"/>
+		</svg>
+	</div>
+	</a>
+
+	<!--Drag: other imgs-->
+	<img class="elephant-pic drag" src="img/elephant.png" alt="elephant.png">
+	<img class="donkey-pic drag" src="img/donkey.png" alt="donkey.png">
+	<img class="eagle-pic drag" src="img/eagle.png" alt="eagle.png">
+	<img class="cloud-pic1" src="img/cloud_1.png" alt="cloud_1.png">
+	<img class="cloud-pic2" src="img/cloud_2.png" alt="cloud_2.png">
+	<img class="tree-branch-1" src="img/tree_branch_1.png" alt="tree_branch_1.png">
+
+	<!--Drag: drag us div-->
+	<div class="drag-me drag hover">DRAG Me!</div>
+
+	<a href="html/about.html"><div class="contact-container">
+		<!--contact info box-->
+		<div class="contact-info-container">
+			<h6>NICE TO MEET YOU!</h6>
+			<p>Yizzy Wu <br>
+			   wutzuyi@gmail.com <br>
+			   +1 347 366 0806
+			</p>
+			<!--hover appear arrow-->
+			<div class="contact-page-link">
+			</div>
+			<div class="more-details">more details</div>
+			<svg id="contact-corner-svg" width= "15" height="15" xmlns="http://www.w3.org/2000/svg">
+				<polyline id="polyline_corner" class="polyline_corner" points="15,0 15,15 0,15" stroke="black"/>
+				<path id="path_corner" class="path_corner" d="M15 15 L0 0" stroke="black"/>
+			</svg>
+		</div>
+	</div>
+	</a> 
+
+	<a href="#">
+	<div id="download-resume" class="download-resume">
+		<p>DOWNLOAD RESUME</p>
+	</div>
+	<a>
+	
+	<svg id="arrows-svg" width= "20" height="30" xmlns="http://www.w3.org/2000/svg">
+		<polyline id="polyline_arrow" class="polyline_arrow" points="20,0 0,10 20,20 20,5 0,15 20,25 20,10 0,20 20,30" stroke="black"/>
+	</svg>
+
+	<footer></footer>
+
+
+
+	
+
+	<!--p5 line background-->
+<!-- 	<script type="text/javascript">		
+		var points = [];
+		var x, y;
+		var lines_length = 6;
+		var x_spacing = y_spacing = lines_length * 2 - 1;
+
+		function setup(){
+			var myCanvas = createCanvas(windowWidth, windowHeight);
+			myCanvas.parent('myCanvas');
+
+			colorMode(RGB, 100); 
+
+			for(x = 0; x < width / x_spacing; x++){
+				for(y = 0; y < height / y_spacing; y++){
+					points.push(createVector(x * x_spacing, y * y_spacing));
+				}
+			}
+		}
+
+		function draw(){
+			background(100);
+			points.forEach(function(point){
+				drawVectorFromPoint(point);
+			})
+		}
+
+		function drawVectorFromPoint(anchorLocation){
+			var mouse = createVector(mouseX, mouseY);
+			var lineVector = p5.Vector.sub(mouse, anchorLocation); //sub = subtract. (a, b)=> a-b
+			lineVector.setMag(lines_length);
+			var hue = map(mouseX, 0, width, 40, 100);
+			// var vectorStroke = map(mouseY, 0, height, 1, 6);
+			strokeWeight(0.5);
+			stroke(hue, 50, 200, 50);
+			line(anchorLocation.x, 
+				 anchorLocation.y,
+				 anchorLocation.x + lineVector.x, 
+				 anchorLocation.y + lineVector.y);
+		}</script> -->
+
+	<!-- jQuery -->
+    <script src="scripts/jquery.js"></script>
+    <!-- jQuery Ui-->
+	<script type="text/javascript" src="scripts/jquery-ui.min.js" async></script>
+	<!-- P5.JS-->
+	<script type="text/javascript" src="scripts/p5.min.js" async></script>
+	
+	<!-- Custom Theme JavaScript -->
+	<script type="text/javascript" src="scripts/main_script.js" async></script>
+	<script type="text/javascript" src="scripts/jquery_drag.js" async></script>
+</body>
+</html>
