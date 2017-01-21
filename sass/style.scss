@@ -3,7 +3,6 @@
 @import 'index';
 @import 'about';
 @import 'projects';
-@import 'shadowelections';
 @import 'svg';
 
 
@@ -324,6 +323,40 @@ footer {
 }
 
 // =================================================================================
+// scroll top button
+// =================================================================================
+.scroll-top-button {
+   width: 20px;
+   height: 20px;
+   z-index: 800;
+   right: 30px;
+   background-color: rgba(255, 255, 255, 0.7);
+}
+
+.scroll-top-arrow {
+   margin: 8px auto;
+   width: 8px;
+   height: 8px;
+   border-top: solid 1px black;
+   border-right: solid 1px black;
+   transform: rotate(-45deg);
+}
+
+// scroll top botton positions: absolute
+.absolute{
+   position: absolute;
+   bottom: 30px; 
+   opacity: 0;
+}
+
+// scroll top botton positions: fixed
+.fixed {
+    position: fixed;
+    bottom: 30px;
+    opacity: 1;
+} 
+
+// =================================================================================
 // section title styles.
 // =================================================================================
 .section-title {
@@ -390,6 +423,11 @@ footer {
 // =================================================================================
 // letter spacing
 // =================================================================================
+//letter-spacing: 1.5
+.letter-space-15 {
+   letter-spacing: 1.5px;
+}
+
 //letter-spacing: 1
 .letter-space-1 {
    letter-spacing: 1px;
@@ -399,6 +437,3 @@ footer {
 .letter-space-05 {
    letter-spacing: 0.5px;
 }
-
-
-

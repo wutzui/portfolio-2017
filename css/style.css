@@ -697,18 +697,15 @@ table {
 }
 
 .about-me-title {
-  position: relative;
+  position: absolute;
   z-index: 2;
-  margin: 80px;
-  top: 750px;
-  text-align: right;
-  color: white;
+  top: 720px;
 }
 
 .about-bio-container {
   position: absolute;
   z-index: 30;
-  top: 800px;
+  top: 740px;
   width: 75%;
   height: 550px;
   right: 80px;
@@ -757,30 +754,28 @@ table {
 
 .skills-title {
   position: absolute;
-  z-index: 40;
-  margin: 100px;
-  top: 1600px;
-  left: 136px;
-  color: white;
+  z-index: 50;
+  top: 1550px;
 }
 
-.about-skills-container {
+.about-grey-bg {
   mix-blend-mode: multiply;
   position: absolute;
   z-index: 2;
   top: 1000px;
   width: 100%;
-  height: 1450px;
+  height: 1180px;
   background-color: rgba(3, 3, 3, 0.5);
 }
 
 .skills-ms-container {
-  top: 300px;
-  left: 25%;
-  padding: 0;
+  position: absolute;
+  z-index: 40;
+  top: 1400px;
 }
 
 .skill {
+  width: 200px;
   margin-right: 70px;
   text-align: center;
   color: white;
@@ -803,14 +798,21 @@ table {
 .skill-svg-container {
   width: 210px;
   height: 210px;
+  background-color: white;
   margin: 20px auto;
+}
+
+.white-arrow {
+  position: absolute;
+  z-index: 30;
+  top: 2000px;
+  left: 80%;
 }
 
 .contact-me-container {
   position: absolute;
   z-index: 45;
-  top: 2650px;
-  left: 240px;
+  top: 2400px;
 }
 .contact-me-container h2 {
   color: white;
@@ -852,7 +854,7 @@ table {
 .contact-me-bg {
   position: absolute;
   z-index: 5;
-  top: 2300px;
+  top: 1820px;
   width: 85%;
   height: 500px;
   background: url("../img/step_bg.jpg") no-repeat;
@@ -861,8 +863,7 @@ table {
 .social-icons-contianer {
   position: absolute;
   z-index: 51;
-  top: 2400px;
-  right: 5%;
+  top: 2000px;
 }
 .social-icons-contianer .social-icons-title {
   color: white;
@@ -923,21 +924,140 @@ table {
   text-align: center;
 }
 
-.project-title {
-  margin-bottom: 72px;
+.election-grey-back {
+  mix-blend-mode: multiply;
+  position: absolute;
+  z-index: 1;
+  top: 500px;
+  width: 100%;
+  height: 800px;
+  background: linear-gradient(#340066, #280040);
+  opacity: 0.7;
 }
-.project-title ul {
-  margin-top: 50px;
+
+.election-respondent {
+  position: absolute;
+  z-index: 20;
+  top: 1400px;
+  color: white;
+}
+
+.respondent-img {
+  position: absolute;
+  z-index: 21;
+  top: 1550px;
+  width: 220px;
+  height: 220px;
+}
+.respondent-img img {
+  width: 220px;
+  height: 220px;
+}
+.respondent-img p {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+.respondent-p {
+  position: absolute;
+  z-index: 20;
+  top: 1250px;
+  width: 55%;
+  padding: 50px;
+  background-color: white;
+}
+
+.election-method {
+  position: absolute;
+  z-index: 20;
+  top: 1800px;
+  color: black;
+  width: 50%;
+}
+
+.election-process-container {
+  position: absolute;
+  z-index: 21;
+  top: 1550px;
+  margin-right: 30px;
+}
+.election-process-container .election-process {
+  width: 180px;
+  height: 180px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.election-process-container .election-process img {
+  width: 140px;
+  margin-bottom: 10px;
+}
+
+.responsor-grey-back {
+  mix-blend-mode: multiply;
+  position: absolute;
+  z-index: 1;
+  top: 500px;
+  width: 100%;
+  height: 800px;
+  background: linear-gradient(#F05B16, #E75866);
+  opacity: 0.7;
+}
+
+.tia-grey-back {
+  mix-blend-mode: multiply;
+  position: absolute;
+  z-index: 1;
+  top: 500px;
+  width: 100%;
+  height: 800px;
+  background: linear-gradient(#4AAAD9, #904497);
+  opacity: 0.7;
+}
+
+.tia-color {
+  position: absolute;
+  z-index: 20;
+  top: 1500px;
+  color: black;
+  width: 50%;
+}
+
+.tia-color-pallette {
+  margin-top: 10px;
+}
+.tia-color-pallette .color-p-li {
+  width: 210px;
+  height: 30px;
+  margin: 10px -2px;
+  padding: 0;
+}
+.tia-color-pallette p span {
+  font-weight: 600;
+}
+
+.project-title {
+  position: fixed;
+  z-index: 500;
+  top: 50px;
+  right: 50px;
 }
 .project-title ul li {
   cursor: pointer;
   font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
-  line-height: 35px;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: right;
+  opacity: 0.4;
+  transition: 0.5s ease-in;
+}
+.project-title ul li:hover {
+  opacity: 1;
+  transition: 0.5s ease-in;
 }
 
 .projects-div-img {
   position: relative;
+  z-index: 100;
   width: 280px;
   height: 280px;
   background-color: pink;
@@ -946,10 +1066,6 @@ table {
 }
 .projects-div-img img {
   width: 100%;
-}
-
-.p-inline {
-  display: inline-block;
 }
 
 .img-center {
@@ -991,7 +1107,7 @@ table {
 }
 
 .media-container {
-  margin-top: 800px;
+  margin-top: 100px;
   margin-left: 240px;
   width: 80%;
 }
@@ -1082,6 +1198,20 @@ table {
   width: 200px;
 }
 
+.desc-container {
+  position: absolute;
+  z-index: 32;
+  top: 750px;
+}
+.desc-container a {
+  font-size: 13px;
+}
+
+/**********************************************************************************/
+.p-inline {
+  display: inline-block;
+}
+
 /**********************************************************************************/
 .font-color-b {
   color: black;
@@ -1110,14 +1240,28 @@ table {
   line-height: 20px;
 }
 
+.p-font-size-12 {
+  font-size: 12px;
+  line-height: 19px;
+}
+
 .p-font-size-14 {
   font-size: 14px;
   line-height: 21px;
 }
 
+.p-font-size-15 {
+  font-size: 15px;
+  line-height: 25px;
+}
+
 /**********************************************************************************/
 .font-weight-600 {
   font-weight: 600;
+}
+
+.font-weight-400 {
+  font-weight: 400;
 }
 
 /**********************************************************************************/
@@ -1167,88 +1311,6 @@ table {
 }
 .year-info-container span {
   padding-right: 5px;
-}
-
-.election-grey-back {
-  mix-blend-mode: multiply;
-  position: absolute;
-  z-index: 1;
-  top: 500px;
-  width: 100%;
-  height: 730px;
-  background: linear-gradient(#340066, #280040);
-  opacity: 0.7;
-}
-
-.election-desc-container {
-  position: absolute;
-  z-index: 32;
-  top: 750px;
-}
-.election-desc-container a {
-  font-size: 13px;
-}
-
-.election-respondent {
-  position: absolute;
-  z-index: 20;
-  top: 1150px;
-  color: white;
-}
-
-.respondent-img {
-  position: absolute;
-  z-index: 21;
-  top: 1700px;
-  width: 220px;
-  height: 220px;
-}
-.respondent-img img {
-  width: 220px;
-  height: 220px;
-}
-.respondent-img p {
-  font-size: 14px;
-  color: white;
-  line-height: 20px;
-  margin-bottom: 20px;
-}
-.respondent-img p span {
-  font-weight: 600;
-}
-
-.respondent-p {
-  position: absolute;
-  z-index: 20;
-  top: 1300px;
-  width: 55%;
-  padding: 50px;
-  background-color: white;
-}
-
-.election-method {
-  position: absolute;
-  z-index: 20;
-  top: 2110px;
-  color: black;
-  width: 650px;
-}
-
-.election-process-container {
-  position: absolute;
-  z-index: 21;
-  top: 1600px;
-  margin-right: 30px;
-}
-.election-process-container .election-process {
-  width: 180px;
-  height: 180px;
-  text-align: center;
-  margin-bottom: 20px;
-}
-.election-process-container .election-process img {
-  width: 140px;
-  margin-bottom: 10px;
 }
 
 @keyframes draw_polyline {
@@ -1537,14 +1599,6 @@ table {
 }
 
 #arrows-svg-rotate90-big {
-  transform: rotate(-90deg) scale(1.3);
-}
-
-#arrows-svg-rotate90-big2 {
-  position: absolute;
-  z-index: 30;
-  top: 1950px;
-  left: 80%;
   transform: rotate(-90deg) scale(1.3);
 }
 
@@ -1960,6 +2014,35 @@ footer {
   animation: 2s fade_in ease-in forwards;
 }
 
+.scroll-top-button {
+  width: 20px;
+  height: 20px;
+  z-index: 800;
+  right: 30px;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.scroll-top-arrow {
+  margin: 8px auto;
+  width: 8px;
+  height: 8px;
+  border-top: solid 1px black;
+  border-right: solid 1px black;
+  transform: rotate(-45deg);
+}
+
+.absolute {
+  position: absolute;
+  bottom: 30px;
+  opacity: 0;
+}
+
+.fixed {
+  position: fixed;
+  bottom: 30px;
+  opacity: 1;
+}
+
 .section-title h2 {
   font-size: 30px;
   font-family: 'Domine', serif;
@@ -2007,6 +2090,10 @@ footer {
 
 .align-left {
   left: 240px;
+}
+
+.letter-space-15 {
+  letter-spacing: 1.5px;
 }
 
 .letter-space-1 {

@@ -1,21 +1,36 @@
+@import 'shadowelections';
+@import 'responsor';
+@import 'tia';
+
+
 // =================================================================================
 // main title at top right, with catelog.
 // =================================================================================
 .project-title {
-	margin-bottom: 3 * $leading;
+	position: fixed;
+	z-index: 500;
+	top: 50px;
+	right: 50px;
 	ul{
-		margin-top: 50px;
 		li{
 			cursor: pointer;
 			font-family: 'Open Sans', sans-serif;
-			font-size: 16px;
-			line-height: 35px;
+			font-size: 12px;
+			line-height: 20px;
+			text-align: right;
+			opacity: 0.4;
+			transition: 0.5s ease-in;
+		}
+		li:hover {
+			opacity: 1;
+			transition: 0.5s ease-in;			
 		}
 	}
 }
 
 .projects-div-img {
 	position: relative;
+	z-index: 100;
 	width: 280px;
 	height: 280px;
 	background-color: pink; 
@@ -24,10 +39,6 @@
 	img {
 		width: 100%;
 	}
-}
-
-.p-inline {
-	display: inline-block;
 }
 
 .img-center {
@@ -74,7 +85,7 @@
 // media + Society | styles
 // =================================================================================
 .media-container {
-	margin-top: 800px;
+	margin-top: 100px;
 	margin-left: 3 * ($grid-width + $grid-gutter);
 	width: 80%;
 }
@@ -179,10 +190,24 @@
 	font-size: 40px;
 }
 
+//description paragraph width
 .p-description {
 	width: 200px;
 }
 
+.desc-container {
+	position: absolute;
+	z-index: 32;
+	top: 750px;
+	a {
+		font-size: 13px;
+	}
+}
+
+/**********************************************************************************/
+.p-inline {
+	display: inline-block;
+}
 /**********************************************************************************/
 .font-color-b {
 	color: black;
@@ -213,15 +238,29 @@
 	line-height: 20px;
 }
 
+.p-font-size-12 {
+	font-size: 12px;
+	line-height: 19px;
+}
+
 .p-font-size-14 {
 	font-size: 14px;
 	line-height: 21px;
 }
 
+.p-font-size-15 {
+	font-size: 15px;
+	line-height: 25px;
+}
+
 /**********************************************************************************/
-//thick font
+//thick font -> Open Sans
 .font-weight-600 {
 	font-weight: 600;
+}
+
+.font-weight-400 {
+	font-weight: 400;
 }
 
 /**********************************************************************************/

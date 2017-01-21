@@ -38,12 +38,9 @@
 // about me title
 // =================================================================================
 .about-me-title {
-	position: relative;
+	position: absolute;
 	z-index: 2;
-	margin: 1 * ($grid-width + $grid-gutter);
-	top: 750px;
-	text-align: right;
-	color: white;
+	top: 720px;
 }
 
 // =================================================================================
@@ -52,7 +49,7 @@
 .about-bio-container {
 	position: absolute;
 	z-index: 30;
-	top: 800px;
+	top: 740px;
 	width: 75%;
 	height: 550px;
 	right: 1 * ($grid-width + $grid-gutter);
@@ -113,41 +110,42 @@
 // =================================================================================
 .skills-title {
 	position: absolute;
-	z-index: 40;
-	margin: 100px;
-	top: 1600px;
-	left: 1.7 * ($grid-width + $grid-gutter);
-	color: white;
+	z-index: 50;
+	top: 1550px;
 }
 
 // =================================================================================
-// skills container
+// grey background
 // =================================================================================
-.about-skills-container {
+.about-grey-bg {
 	mix-blend-mode: multiply;
 	position: absolute;
 	z-index: 2;
 	top: 1000px;
 	width: 100%;
-	height: 1450px;
+	height: 1180px;
 	background-color: rgba(3, 3, 3, 0.5);
 }
 
+// =================================================================================
+// skills container
+// =================================================================================
 .skills-ms-container {
-	top: 300px;
-	left: 25%;
-	padding: 0;
+	position: absolute;
+	z-index: 40;
+	top: 1400px;
 }
 
 .skill {
+	width: 200px;
 	margin-right: 70px;
 	text-align: center;
 	color: white;
-	//skill title
 	hr {
 		border-top: 1px solid white;
 		width: 10%;
 	}
+	//skill title
 	h3 {
 		font-size: 18px;
 		letter-spacing: 1.5px;
@@ -163,7 +161,18 @@
 .skill-svg-container {
 	width: 210px;
 	height:210px;
+	background-color: white;
 	margin: 20px auto;
+}
+
+// =================================================================================
+// white arrow
+// =================================================================================
+.white-arrow {
+  position: absolute;
+  z-index: 30;
+  top: 2000px;
+  left: 80%;
 }
 
 // =================================================================================
@@ -172,8 +181,7 @@
 .contact-me-container {
 	position: absolute;
 	z-index: 45;
-	top: 2650px;
-	left: 3 * ($grid-width + $grid-gutter);
+	top: 2400px;
 	h2 {
 		color: white;
 		line-height: 35px;
@@ -215,7 +223,7 @@
 .contact-me-bg {
 	position: absolute;
 	z-index: 5;
-	top: 2300px;
+	top: 1820px;
 	width: 85%;
 	height: 500px;
 	background: url('../img/step_bg.jpg') no-repeat;
@@ -228,8 +236,7 @@
 .social-icons-contianer {
 	position: absolute;
 	z-index: 51;
-	top: 2400px;
-	right: 5%;
+	top: 2000px;
 	
 	.social-icons-title {
 		color: white;

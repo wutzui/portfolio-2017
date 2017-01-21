@@ -8,18 +8,6 @@
 	<!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="../css/bootstrap.css" type="text/css">
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
-	<!-- jQuery -->
-    <script src="../scripts/jquery.js"></script>
-    <!-- jQuery Ui-->
-	<script type="text/javascript" src="../scripts/jquery-ui.min.js" async></script>
-	<!-- Bootstrap.JS-->
-	<script type="text/javascript" src="../scripts/bootstrap.min.js" async></script>
-	<!-- P5.JS-->
-	<script type="text/javascript" src="../scripts/p5.min.js" async></script>
-	<!-- Custom Theme JavaScript -->
-	<script type="text/javascript" src="../scripts/main_script.js" async></script>
-	<script type="text/javascript" src="../scripts/jquery_drag.js" async></script>
-	<script type="text/javascript" src="../scripts/scroll_speeds.js" async></script>
 </head>
 <body class="fade-in">
 
@@ -57,22 +45,21 @@
 
 	<!--contact info left-bottom-->
 	<div class="left-bg"><img src="../img/fog.png"></div>
-<!-- 	<div class="contact-info-container-p">
-		<p>Yizzy Wu<br>
-		   wutzuyi@gmail.com<br>
-		   +1 ( 347 ) 366 0806
-		</p>
-	</div> -->
+
+	<!--scroll back to top button-->
+	<div id="scroll-top-button" class="scroll-top-button absolute">
+		<div class="scroll-top-arrow"></div>
+	</div>
 
 	<!--****************************************************************************************-->
 
 	<!--background img at top-->
-	<div class="about-bg-img-top scroll-speeds" data-scroll-speed="20">
+	<div class="about-bg-img-top rellax" data-rellax-speed="-1">
 		<img src="../img/central_park.jpg">
 	</div>
 
 	<!--top right quote-->
-	<div class="about-quote p-top-right scroll-speeds" data-scroll-speed="2">
+	<div class="about-quote p-top-right rellax" data-rellax-speed="8">
 		<h1>“The worst <br>
 		enemy to <br>
 		creativity is <br>
@@ -81,7 +68,7 @@
 	</div>
 
 	<!-- scroll down arrow -->
-	<div id="scroll-down-arrow" class="scroll-speeds" data-scroll-speed= "2">
+	<div id="scroll-down-arrow" class="rellax" data-rellax-speed="4">
 		<svg id="arrows-svg-rotate90-big" width= "20" height="30" xmlns="http://www.w3.org/2000/svg">
 			<polyline id="polyline_arrow" class="polyline_arrow"
 			points="20,0 0,10 20,20 20,5 0,15 20,25 20,10 0,20 20,30" stroke="white"/>
@@ -89,11 +76,12 @@
 	</div>
 
 	<!-- about me title -->
-	<div id="about-me-title" class="about-me-title section-title scroll-speeds" data-scroll-speed="2">
-		<h2>About Me</h2>
+	<div id="about-me-title" class="about-me-title align-right rellax" data-rellax-speed="6">
+		<div class="white-bg short-hr" style="margin: 50px 0 50px 105px;"></div>
+		<h2 class="h2-font-size font-color-w">About Me</h2>
 	</div>
 	<!-- about bio paragraph -->
-	<section id="about-bio" class="about-bio-container container scroll-speeds" data-scroll-speed="3">	
+	<section id="about-bio" class="about-bio-container container rellax" data-rellax-speed="5">	
 		<div class="bio-p col-md-8">
 			<h2>My name is Yizzy.</h2>
 			<p>I am a Taiwanese-based visual and interactive designer located in New York. 
@@ -119,74 +107,93 @@
 	</section>
 
 	<!-- my photo img -->
-	<div id="my-photo" class="my-photo">
+	<div id="my-photo" class="my-photo rellax" data-rellax-speed="1">
 		<img src="../img/myphoto.jpg">
 	</div>
 
 	<!-- skills title -->
-	<div id="about-me-title" class="skills-title section-title scroll-speeds" data-scroll-speed="2">
-		<h2>My Capabilities</h2>
+	<div id="skills-title" class="skills-title align-left rellax" data-rellax-speed="6">
+		<div class="white-bg short-hr" style="margin: 50px 0 50px 0px;"></div>
+		<h2 class="h2-font-size font-color-w">My Capabilities</h2>
 	</div>
-	<section id="about-skills" class="about-skills-container">
-		<div id="skills-ms-container" class="skills-ms-container col-md-9 row">
-			<div id="skill-1" class="skill col-md-3">
-				<div id="" class="skill-svg-container">
+
+	<div id="about-grey-bg" class="about-grey-bg"></div>
+
+	<section id="skills-ms-container" class="skills-ms-container align-right rellax" data-rellax-speed="3">
+		<div id="skill-1" class="skill p-inline">
+			<div id="" class="skill-svg-container">
 					
-				</div>
-				<hr>
-				<h3>USER RESEARCH</h3>
-				<p>Do field research, survey and analysis while testing. 
-				Create persona, flow maps and storyboards.</p>
 			</div>
-			<div id="skill-2" class="skill col-md-3">
-				<div id="" class="skill-svg-container">
+			<hr>
+			<h3>USER RESEARCH</h3>
+			<p>Do field research, survey and analysis while testing. 
+			Create persona, flow maps and storyboards.<br><br>
+			::::::
+			</p>
+		</div>
+		<div id="skill-2" class="skill p-inline">
+			<div id="" class="skill-svg-container">
 					
-				</div>
-				<hr>
-				<h3>PROTOTYPING</h3>
-				<p>Quickly work on concept sketchs, wireframes, paper 
-				prototypes, physical objects, and motion graphics for interactions. </p>
 			</div>
-			<div id="skill-3" class="skill col-md-3">
-				<div id="" class="skill-svg-container">
+			<hr>
+			<h3>PROTOTYPING</h3>
+			<p>Quickly work on concept sketchs, wireframes, paper 
+			prototypes, physical objects, and motion graphics.<br><br>
+			::::::
+			</p>
+		</div>
+		<div id="skill-3" class="skill p-inline">
+			<div id="" class="skill-svg-container">
 					
-				</div>
-				<hr>
-				<h3>VISUAL CONCEPT</h3>
-				<p>Design eye catching graphics, interfaces, and layouts.
-				Make structive color planning, and iconography.</p>
 			</div>
+			<hr>
+			<h3>VISUAL CONCEPT</h3>
+			<p>Design eye catching graphics, interfaces, and layouts.
+			Make structive color planning, and iconography.<br><br>
+			::::::
+			</p>
 		</div>
 	</section>
 
-	<!-- scroll down arrow -->
-	<svg id="arrows-svg-rotate90-big2" width= "20" height="30" xmlns="http://www.w3.org/2000/svg">
-		<polyline id="polyline_arrow" class="polyline_arrow"
-		points="20,0 0,10 20,20 20,5 0,15 20,25 20,10 0,20 20,30" stroke="white"/>
-	</svg>
+	<!-- arrow -->
+	<div class="white-arrow rellax" data-rellax-speed="2">
+		<svg id="arrows-svg-rotate90-big" width= "20" height="30" xmlns="http://www.w3.org/2000/svg">
+			<polyline id="polyline_arrow" class="polyline_arrow"
+			points="20,0 0,10 20,20 20,5 0,15 20,25 20,10 0,20 20,30" stroke="white"/>
+		</svg>
+	</div>
 
 	<!-- contact me -->
-	<section id="contact-me-container" class="contact-me-container scroll-speeds" data-scroll-speed="2">
+	<section id="contact-me-container" class="contact-me-container align-left rellax" data-rellax-speed="7">
 		<!-- contact me: title -->
 		<div class="contact-me-title section-title">
-		<h2>I'm recently <br> seeking opportunities <br> of ux/ui design positions.
-		<br><br>Please let me know <br>if You're Interested! Thank you!</h2>
+		<h2 class="font-color-w letter-space-05">
+			I'm recently <br> 
+			seeking opportunities <br> 
+			of ux/ui design positions.
+			<br><br>
+			Please let me know <br>
+			if You're Interested! Thank you!</h2>
 		</div>
 		<!-- contact me: info(email/phone...) -->
 		<div id="about-contact-info" class="about-contact-info">
 			<p>::::::</p><br>
-			<h3>YIZZY WU <span style="font-weight: 400; font-size: 15px;">/ 吳姿儀</span></h3>
-			<div class="email contact-content">
-				<p><span>EMAIL</span><br> wutzuyi@gmail.com <br> wut343@newschool.edu</p>
+			<h3>YIZZY WU <span class="p-font-size-15 font-weight-400">/ 吳姿儀</span></h3>
+			<div class="contact-content">
+				<p><span>EMAIL</span><br> 
+				wutzuyi@gmail.com <br> 
+				wut343@newschool.edu</p>
 			</div>
-			<div class="cellphone contact-content">
-				<p><span>CELLPHONE</span><br>US +1 347 3660806 <br> TW +886 983007013</p>
+			<div class="contact-content">
+				<p><span>CELLPHONE</span><br>
+				US +1 347 3660806 <br> 
+				TW +886 983007013</p>
 			</div>
 		</div>
 	</section>
 
 	<!-- social icons / links -->
-	<section id="social-icons-contianer" class="social-icons-contianer scroll-speeds" data-scroll-speed="6">
+	<section id="social-icons-contianer" class="social-icons-contianer align-right rellax" data-rellax-speed="1">
 		<h5 id="social-icons-title" class="social-icons-title">Other Links</h5>
 		<div id="social-icons-content" class="social-icons-content">
 			<ul>
@@ -199,16 +206,17 @@
 			</ul>
 		</div>
 		<!-- download resume -->
-		<a href="#">
+		<a href="#" style="text-decoration: none;">
 		<div id="social-downloadcv" class="social-downloadcv">
 			<p>DOWNLOAD RESUME ::::::</p>
 		</div>
 		</a>
 	</section>
-	<div id="contact-me-bg" class="contact-me-bg scroll-speeds" data-scroll-speed="4"></div>
+	<div id="contact-me-bg" class="contact-me-bg rellax" data-rellax-speed="2"></div>
 
+	<!--****************************************************************************************-->
 	<!-- copy right -->
-	<div class="copy-right" style="top: 2400px;">
+	<div class="copy-right" style="top: 2130px;">
 		<p>Copyright © Design and Developed by Yizzy Wu. All Rights Reserved.</p>
 	</div>
 	<footer></footer>
@@ -219,9 +227,11 @@
 	<script type="text/javascript" src="../scripts/jquery-ui.min.js" async></script>
 	<!-- Bootstrap.JS -->
 	<script type="text/javascript" src="../scripts/bootstrap.min.js" async></script>
+    <!-- rellax.js -->
+    <script type="text/javascript" src="../scripts/rellax.min.js" async></script>
 	<!-- Custom Theme JavaScript -->
 	<script type="text/javascript" src="../scripts/main_script.js" async></script>
-	<script type="text/javascript" src="../scripts/jquery_drag.js" async></script>
 	<script type="text/javascript" src="../scripts/scroll_speeds.js" async></script>
+	<script type="text/javascript" src="../scripts/rellax_scroll.js" async></script>
 </body>
 </html>

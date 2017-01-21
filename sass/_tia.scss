@@ -1,0 +1,40 @@
+// =================================================================================
+// first section
+// =================================================================================
+.tia-grey-back {
+	mix-blend-mode: multiply;
+	position: absolute;
+	z-index: 1;
+	top: 500px;
+	width: 100%;
+	height: 800px;
+	background: linear-gradient(#4AAAD9, #904497);
+	opacity: 0.7;
+}
+
+
+// =================================================================================
+// tia color pallette container
+// =================================================================================
+.tia-color {
+	position: absolute;
+	z-index: 20;
+	top: 1500px;
+	color: black;
+	width: 50%;
+}
+
+.tia-color-pallette {
+	margin-top: 10px;
+	.color-p-li{
+		width: 210px;
+		height: 30px;
+		margin: 10px -2px;
+		padding: 0;
+	}
+	p{
+		span {
+			font-weight: 600;
+		}
+	}
+}
