@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
+	<!-- meta for mobile device -->
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<meta name="description" content="">
     <meta name="author" content="Yizzy Wu">
 	<title>Yizzy Wu | Projects</title>
@@ -20,34 +22,54 @@
 	<header></header>
 	<div class="bg-img"><img src="../img/paper_back.jpg" alt="paper_background"></div>
 
-	<!--Logo Area-->
-	<a href="index.html">
-	<div id="logoArea" class="logo-area">
-		<div id="logo-border-rotate" class="logo-border-rotate">
-			<div id="logo-border-rotate-dot" class="logo-border-rotate-dot"></div>
+	<section class="menu-bg">
+		<!--Logo Area-->
+		<a href="index.html">
+		<div id="logoArea" class="logo-area">
+			<div id="logo-border-rotate" class="logo-border-rotate">
+				<div id="logo-border-rotate-dot" class="logo-border-rotate-dot"></div>
+			</div>
+			<div id="logo-border" class="logo-border">
+				<div id="logo-border-dot" class="logo-border-dot"></div>
+			</div>
+			<div id="logo-text-container" class="logo-text-container">
+				<h1 id="logo-text" class="logo-text">Yw.</h1>
+			</div>
 		</div>
-		<div id="logo-border" class="logo-border">
-			<div id="logo-border-dot" class="logo-border-dot"></div>
-		</div>
-		<div id="logo-text-container" class="logo-text-container">
-			<h1 id="logo-text" class="logo-text">Yw.</h1>
-		</div>
-	</div>
-	</a>
+		</a>
 
-	<!--Main Menu-->
-	<div id="main-menu" class="main-menu-container">
-		<svg id="arrows-svg-rotate90" width= "20" height="30" xmlns="http://www.w3.org/2000/svg">
-			<polyline id="polyline_arrow" class="polyline_arrow"
-			points="20,0 0,10 20,20 20,5 0,15 20,25 20,10 0,20 20,30" stroke="black"/>
-		</svg>	
-		<ul>
-			<li id="home" class="li"><a href="../index.html">Home</a></li>
-			<li id="projects" class="li"><a href="">Projects</a></li>
-			<li id="about" class="li"><a href="../html/about.html">About</a></li>
-			<!-- <li id="contact" class="li">Contact</a></li> -->
-		</ul>
-	</div>
+		<!--Main Menu-->
+		<div id="main-menu" class="main-menu-container">
+			<svg id="arrows-svg-rotate90" width= "20" height="30" xmlns="http://www.w3.org/2000/svg">
+				<polyline id="polyline_arrow" class="polyline_arrow"
+				points="20,0 0,10 20,20 20,5 0,15 20,25 20,10 0,20 20,30" stroke="black"/>
+			</svg>	
+			<ul>
+				<li id="home" class="li"><a href="../index.html">Home</a></li>
+				<li id="projects" class="li"><a href="">Projects</a></li>
+				<li id="about" class="li"><a href="../html/about.html">About</a></li>
+				<!-- <li id="contact" class="li">Contact</a></li> -->
+			</ul>
+			<!--links-->
+			<div class="link-icons-container">
+				<div class="link-icon">
+				<a href="mailto:wutzuyi@gmail.com?Subject=Hello" target="_top">
+					<img src="../img/link_icons/email.png">
+				</a>
+				</div>
+				<div class="link-icon">
+				<a href="https://www.linkedin.com/in/yizzywu" target="_blank">
+					<img src="../img/link_icons/linkedin.png">
+				</a>
+				</div>
+				<div class="link-icon">
+				<a href="https://github.com/wutzui" target="_blank">
+					<img src="../img/link_icons/github.png">
+				</a>
+				</div>
+			</div>
+		</div>
+	</section>
 
 	<!--scroll back to top button-->
 	<div id="scroll-top-button" class="scroll-top-button absolute">
@@ -57,7 +79,7 @@
 	<!--****************************************************************************************-->
 
 	<!--top right quote-->
-	<div id="project-tilte" class="project-title letter-space-15">
+	<div id="project-tilte" class="project-nav letter-space-15">
 		<ul>
 			<li class="project-li" data-scroll="media">MEDIA + SOCIETY</li>
 			<li class="project-li" data-scroll="open">OPEN SPACE + EXPERIMENTS</li>
@@ -103,13 +125,13 @@
 					tangible connections with their sponsored kids.</p>
 				</div>
 			</div></a>
-			<a href=""><div id="img-recipe" class="projects-div-img p-inline">
-				<img src="../img/thumbnails/recipe_thumbnail.png">
+			<a href=""><div id="img-bonds" class="projects-div-img p-inline">
+				<img src="../img/thumbnails/bond_thumbnail.png">
 				<div class="img-center">
-					<h5>TAIWAN CUISINES RECIPE</h5>
+					<h5>BONDS OF LIFE</h5>
 					<hr>
-					<p>The mobile app concept that based on the serie of illustrations 
-					to showcase the delightfulness of the Taiwanese cuisines.</p>
+					<p>A data visualization which maps out the personal history of 
+					relationships as well as the technology development.</p>
 				</div>
 			</div></a>
 			<a href=""><div id="img-queue" class="projects-div-img p-inline">
@@ -132,7 +154,7 @@
 			<p>Working Projects with topics of multiple social issues, such as human relationships, charity via sponsorship, and politics. The projects are presented in problem solving websites or mobile apps, critical design pieces, and the printed edition.</p>
 		</div>
 		<div id="p-img-container" class="p-img-container projects-divs">
-			<a href=""><div id="img-brooklyn" class="projects-div-img p-inline">
+			<a href="../html/brooklyn.html"><div id="img-brooklyn" class="projects-div-img p-inline">
 				<img src="../img/thumbnails/brooklyn_thumbnail.png">
 				<div class="img-center">
 					<h5>ON THE BRIDGE</h5>
@@ -150,6 +172,15 @@
 					visitor of The Metropolitan Museum of Art.</p>
 				</div>
 			</div></a>
+			<a href="../html/cuisine.html"><div id="img-recipe" class="projects-div-img p-inline">
+				<img src="../img/thumbnails/recipe_thumbnail.png">
+				<div class="img-center">
+					<h5>TAIWAN CUISINES RECIPE</h5>
+					<hr>
+					<p>The mobile app concept that based on the serie of illustrations 
+					to showcase the delightfulness of the Taiwanese cuisines.</p>
+				</div>
+			</div></a>
 		</div>
 	</section>
 
@@ -157,19 +188,10 @@
 	<section id="data-contaienr" class="data-container" data-anchor="data"> 
 		<div class="black-bg short-hr" style="margin-top: 50px; margin-bottom: 50px"></div>
 		<div class="open-title section-title">
-			<h2>Data + Naratives</h2>
+			<h2>Data + Narratives</h2>
 			<p>Working Projects with topics of multiple social issues, such as human relationships, charity via sponsorship, and politics. The projects are presented in problem solving websites or mobile apps, critical design pieces, and the printed edition.</p>
 		</div>
 		<div id="p-img-container" class="p-img-container projects-divs">
-			<a href=""><div id="img-bonds" class="projects-div-img p-inline">
-				<img src="../img/thumbnails/bond_thumbnail.png">
-				<div class="img-center">
-					<h5>BONDS OF LIFE</h5>
-					<hr>
-					<p>A data visualization which maps out the personal history of 
-					relationships as well as the technology development.</p>
-				</div>
-			</div></a>
 			<a href=""><div id="img-ufo" class="projects-div-img p-inline">
 				<img src="../img/thumbnails/ufo_thumbnail.png">
 				<div class="img-center">
@@ -265,7 +287,7 @@
 			<a href=""><div id="img-foodsafty" class="projects-div-img p-inline">
 				<img src="../img/thumbnails/foodsafety_thumbnail.png">
 				<div class="img-center">
-					<h5>FOOD SAFETY</h5>
+					<h5>SAFETY OF FOODS</h5>
 					<hr>
 					<p>The series of the digital book produced by I-Mei Food Company 
 					in Taiwan to show their strong commitment to food safety and quality.</p>
@@ -301,6 +323,7 @@
 		</div>
 	</section>
 
+	<!--****************************************************************************************-->
 	<!-- copy right -->
 	<div class="projects-copy-right">
 		<p>Copyright © Design and Developed by Yizzy Wu. All Rights Reserved.</p>
@@ -314,5 +337,6 @@
 	<!-- Custom Theme JavaScript -->
 	<script type="text/javascript" src="../scripts/main_script.js" async></script>
 	<script type="text/javascript" src="../scripts/scroll_speeds.js" async></script>
+	<script type="text/javascript" src="../scripts/app.js" async></script>
 </body>
 </html>

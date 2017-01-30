@@ -38,3 +38,43 @@
 		}
 	}
 }
+
+// =================================================================================
+// client container
+// =================================================================================
+//client title
+.tia-client-title {
+	position: absolute;
+	z-index:20;
+	top: 2650px;
+}
+
+.tia-client-content {
+	position: absolute;
+	z-index: 20;
+	top: 2250px;
+	p{
+		width: 3 *($grid-width + $grid-gutter);
+		margin-right: 1 * $grid-width;
+	}
+	img {
+		width: 7 *($grid-width + $grid-gutter);
+	}
+}
+
+
+.scroll-arrow-tia2 {
+	mix-blend-mode: soft-light;
+	position: absolute;
+	z-index: 400;
+	top: 1660px;
+	right: 4 *($grid-width + $grid-gutter);
+}
+
+
+// =================================================================================
+// copy right
+// =================================================================================
+.tia-copy-right {
+	top: 2150px;
+}
